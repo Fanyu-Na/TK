@@ -1,5 +1,3 @@
-﻿var workbook;
-
 function readWorkbookFromRemoteFile(url, callback) {
     var xhr = new XMLHttpRequest();
     xhr.open('get', '题库.xls', true);
@@ -84,11 +82,11 @@ $('.Start').click(function () {
             <div class='Options'>
                 <input type='checkbox' name='Option`+ TID + `' value='A'><xmp>A. ` + A + `</xmp>
                 <br>
-                <input type='checkbox' name='Option`+ TID + `' value='B'> <xmp>B.` + B + `</xmp>
+                <input type='checkbox' name='Option`+ TID + `' value='B'><xmp>B. ` + B + `</xmp>
                 <br>
-                <input type='checkbox' name='Option`+ TID + `' value='C'> <xmp>C.` + C + `</xmp>
+                <input type='checkbox' name='Option`+ TID + `' value='C'><xmp>C. ` + C + `</xmp>
                 <br>
-                <input type='checkbox' name='Option`+ TID + `' value='D'> <xmp>D.` + D + `</xmp>
+                <input type='checkbox' name='Option`+ TID + `' value='D'><xmp>D. ` + D + `</xmp>
                 <br>
                 <span class='AnswerBox'>正确答案:<span class='Answer'>`+ 答案 + `</span></span>
             </div>
