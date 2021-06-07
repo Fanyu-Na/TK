@@ -78,6 +78,7 @@
 
         .Titles{
             width: 100%;
+            position: relative;
         }
 
 
@@ -107,8 +108,19 @@
             width: 80px;
             height: 30px;
         }
+
+        .Submit{
+            width: 100px;
+            height: 40px;
+            position :fixed;
+            background: none;
+            border: 2px solid black;
+            border-radius: 30px;
+            bottom: 60px;
+            right: 50px;
+        }
         
-        h1{
+        h1,h3{
             text-align:  center;
             margin: 30px;
         }
@@ -116,7 +128,8 @@
 </head>
 
 <body ng-controller="MyController">
-    <h1>欢迎使用蘑菇Ding刷题站</h1>
+    <h1>蘑菇Ding刷题站</h1>
+    <h3>QQ:381268035</h1>
     <div class="top">
         <select class="TitleList">
         </select>
@@ -133,6 +146,7 @@
     <!-- <script src="Js/angular.min.js"></script> -->
     <script src="./Js/customjs.js"></script>
     <script src="./Js/xlsx.full.min.js"></script>
+    
 </body>
 
 </html>
