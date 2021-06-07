@@ -210,3 +210,7 @@ function GetRandom(arr) {
 $('.Random').click(function () {
     createArr()
 })
+
+$(document).on('click','xmp',function(){
+    $(this).prev().click()
+})
