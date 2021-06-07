@@ -1,11 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html ng-app="myApp">
 
 <head>
     <meta charset="UTF-8">
-    <title>Reading Excel</title>
+    <title>刷题_By凡宇</title>
+    
     <meta name="viewport" content="width=device-width,initial-scale=10" />
-
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"> -->
 
 
     <style type="text/css">
@@ -17,9 +18,13 @@
         xmp {
             display: inline-block;
             font-family:inherit;
-            width: 50%;
+            width: 100%;
             font-size:1.3em;
             font-weight:bolder;
+            height: auto;  
+            word-wrap:break-word;  
+            word-break:break-all;  
+            overflow: hidden; 
         }
 
         .Titles .Title{
@@ -39,13 +44,22 @@
 
         .Box{
             width: 90%;
-            overflow-x: hidden;
+            /* overflow-x: hidden; */
             margin: 0 auto;
             margin-top: 20px;
         }
 
         .Titles{
             width: 100%;
+        }
+
+        .Content{
+            width: 100%;
+            /* border: 1px solid red; */
+            height: auto;  
+            word-wrap:break-word;  
+            word-break:break-all;  
+            overflow: hidden; 
         }
 
         .AnswerBox{
@@ -66,7 +80,7 @@
     <select class="TitleList">
     </select>
     <button class="Start">背题模式</button>
-    <button class="Exam">考试模式</button>
+    <button class="Exam">测试模式</button>
     <div class="Box">
         <div class="Titles">
             
