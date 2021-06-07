@@ -104,14 +104,17 @@ $('.Exam').click(function () {
     $('.Title').remove()
     $('.Submit').remove()
     let TID = 1;
+    // alert(TitleLength)
     if (TitleLength > 50) {
-        for (var i in GetRandom(str)) {
-            var 题目 = str[i].题目;
-            var A = str[i].A;
-            var B = str[i].B;
-            var C = str[i].C;
-            var D = str[i].D;
-            var 答案 = str[i].答案;
+        var Temp = GetRandom(str)
+        // console.log(Temp)
+        for (var i in Temp) {
+            var 题目 = Temp[i][0].题目;
+            var A = Temp[i][0].A;
+            var B = Temp[i][0].B;
+            var C = Temp[i][0].C;
+            var D = Temp[i][0].D;
+            var 答案 = Temp[i][0].答案;
             $('.Titles').append(`<div class='Title' TID='` + TID + `'>
                 <xmp class='Content'>`+ TID + `. ` +
                 题目
@@ -133,6 +136,7 @@ $('.Exam').click(function () {
         $('.Titles').append('<button class="Submit">提交</button>')
     } else {
         for (var i in str) {
+            
             var 题目 = str[i].题目;
             var A = str[i].A;
             var B = str[i].B;
@@ -201,6 +205,7 @@ function GetRandom(arr) {
         var temp = (Math.random() * arr.length) >> 0;
         out.push(arr.splice(temp, 1));
     }
+    // console.log(out)
     return out
 }
 
