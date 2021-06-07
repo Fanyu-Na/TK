@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reading Excel</title>
+    <meta name="viewport" content="width=device-width,initial-scale=10" />
+
+
+
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        xmp {
+            display: inline-block;
+            font-family:inherit;
+            width: 50%;
+            font-size:1.3em;
+            font-weight:bolder;
+        }
+
+        .Titles .Title{
+            border: 1px solid black;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        input{
+            margin-top: 30px;
+        }
+
+        .Options{
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        .Box{
+            width: 90%;
+            overflow-x: hidden;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+
+        .Titles{
+            width: 100%;
+        }
+
+        .AnswerBox{
+            color: red;
+            margin-top: 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            display: block;
+        }
+
+        .Error{
+            color: red;
+        }
+    </style>
+</head>
+
+<body ng-controller="MyController">
+    <select class="TitleList">
+    </select>
+    <button class="Start">背题模式</button>
+    <button class="Exam">考试模式</button>
+    <div class="Box">
+        <div class="Titles">
+            
+        </div>
+    </div>
+    <script src="./Js/jquery-3.3.1.min.js"></script>
+    <!-- <script src="Js/angular.min.js"></script> -->
+    <script src="./Js/customjs.js"></script>
+    <script src="./Js/xlsx.full.min.js"></script>
+</body>
+
+</html>
